@@ -1,4 +1,10 @@
+var btnTranslate= document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
 
-var input= prompt("enter your name")
-alert("Hello "+ input)
-console.log(input)
+function clickEvent(){
+    alert("Hello");
+    console.log(txtInput.value);
+}
+
+
+btnTranslate.addEventListener("click", clickEvent);
